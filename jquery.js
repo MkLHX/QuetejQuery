@@ -1,12 +1,12 @@
-$(function() {
+$(document).ready(function() {
 
 	//rotation speed and timer
-	var speed = 5000;
+	var speed = 3000;
 	var run = setInterval('rotate()', speed);	
 	
 	//grab the width and calculate left value
 	var item_width = $('#slides li').outerWidth(); 
-	var left_value = item_width * (-1); 
+	var left_value = 0;//item_width-800;//* (-1); 
         
     //move the last item before first item, just in case user click prev button
 	$('#slides li:first').before($('#slides li:last'));
@@ -21,7 +21,7 @@ $(function() {
 		var left_indent = parseInt($('#slides ul').css('left')) + item_width;
 
 		//slide the item            
-		$('#slides ul').animate({'left' : left_indent}, 200,function(){    
+		$('#slides ul').animate({'left' : left_indent}, 0,function(){    
 
             //move the last item and put it as first item            	
 			$('#slides li:first').before($('#slides li:last'));           
@@ -44,7 +44,7 @@ $(function() {
 		var left_indent = parseInt($('#slides ul').css('left')) - item_width;
 		
 		//slide the item
-		$('#slides ul').animate({'left' : left_indent}, 200, function () {
+		$('#slides ul').animate({'left' : left_indent}, 0, function () {
             
             //move the first item and put it as last item
 			$('#slides li:last').after($('#slides li:first'));                 	

@@ -1,6 +1,6 @@
 #carousel {
-	width:800px;
-	height:800px;	
+	width:1000px;
+	height:1000px;	
 	margin:0 auto;
 }
 
@@ -8,8 +8,8 @@
 	overflow:hidden;
 	/* fix ie overflow issue */
 	position:relative;
-	width:600px;
-	height:600px;
+	width:800px;
+	height:800px;
 	border:1px solid #ccc;
 }
 
@@ -21,18 +21,20 @@
 	list-style:none;
 	margin:0;
 	padding:0;	
-	width:750px;			
+	width:800px;			
 }
 
 /* width of the item, in this case I put 250x250x gif */
 #slides li {
-	width:600px;
-	height:600px;	
+	width:800px;
+	height:800px;	
 	float:left;
 }
 
 #slides li img {
 	padding:5px;
+	width: 800px;
+	height: 800px;
 }
 
 /* Styling for prev and next buttons */
@@ -43,15 +45,15 @@
 
 #buttons a {
 	display:block; 
-	width:31px; 
-	height:32px;
-	text-indent:-999em;
+	width:80px; 
+	height:80px;
+	/*text-indent:-999em;*/
 	float:left;
 	outline:0;
 }
 
 a#prev {
-	background:url(img/arrow.jpeg) 0 -31px no-repeat; 
+	background:url(img/arrow.jpeg) 0 -50px no-repeat;
 }
 
 a#prev:hover {
@@ -59,11 +61,11 @@ a#prev:hover {
 }
 
 a#next {
-	background:url(img/arrow.jpeg) -32px -31px no-repeat; 
+	background:url(img/arrow.jpeg) -50px -50px no-repeat;
 }
 
 a#next:hover {
-	background:url(img/arrow.jpeg) -32px 0 no-repeat;
+	background:url(img/arrow.jpeg) 0px 0 no-repeat;
 }
 
 .clear {clear:both}
